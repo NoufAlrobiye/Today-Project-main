@@ -1,0 +1,154 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 6.5vw !important;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 1.1rem;
+    font-family: 'Merriweather',serif;
+    font-weight: 700;
+    word-spacing: 0.4vw;
+}
+
+h6{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #6CAA7F;
+}
+
+p{
+   font-size: 1rem;
+   font-family: 'Karla', sans-serif;
+   line-height: 1.5rem;
+}
+
+button {
+  background: #6CAA7F ;
+  border-style: none;
+  padding: 0.7rem 1.3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff; 
+}
+
+hr {
+    background: #27ae60;
+    color:#27ae60;
+    height: 0.07rem;
+}
+
+
+/* Body */
+body {
+    font-family: 'Montserrat' sans-serif;
+}
+
+
+header .intro {
+  position: relative;
+}
+
+header .intro .head{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,50%);
+}
+
+header .intro .head h1{
+    font-family: "Leckerli One", cursive;
+    color: #000;
+}
+
+header .intro .head h6{
+    color: #27ae60;
+    letter-spacing: 01.3rem;
+}
+
+header .navbar .navbar-nav .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #2ecc71;
+    transition: width 0.3s;
+}
+
+header .navbar .navbar-nav .nav-link:hover::after {
+    width: 60%;
+    height: 2px;
+    background: #2ecc71;
+    transition: width 0.3s;
+    border-bottom: 2px solid #27ae60;
+}
+
+header .navbar .navbar-nav i {
+    font-size: 1.2rem;
+    color: #000;
+    cursor: pointer;
+
+}
+
+cards1 .row .one {
+    height: 300px;
+}
+
+cards1 .row .one img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+cards1 .row .one .text{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+cards1 .row .one .text p{
+    letter-spacing: 0.2rem;
+    line-height: 2px;
+}
+
+cards1 .row .one .text a{
+    text-decoration: none;
+    border-style: none;
+    color: white;
+    font-size: 0.9rem;
+}
+
+cards1 .row .one .text a::after{
+    content: "";
+    display: block;
+    width: 30%;
+    height: 2px;
+    background: #2ecc71;
+    
+}
+
+.wether {
+    background-color: #defadb;
+}
+
+.wether .row .sub input{
+    outline: none;
+    border: 1px solid #6caa7f;
+}
+
