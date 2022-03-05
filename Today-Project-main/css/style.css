@@ -152,3 +152,50 @@ cards1 .row .one .text a::after{
     border: 1px solid #6caa7f;
 }
 
+.wether .row .sub input::placeholder{
+    font-size: 0.9rem;
+}
+
+
+.bolg .row .post a{
+    font-size: 00.9rem;
+    color: #27ae60;
+    font-weight: bold;
+    text-decoration: none;
+    border-style: none;
+}
+
+.bolg .row .sidebar .side2 .row .sidetext h4{
+    font-size: 1rem;
+}
+
+.bolg .row .sidebar .side2 .row .sidetext a{
+    text-decoration: none;
+    border-style: none;
+    color: #6caa7f;
+    font-size: 0.8rem;
+}
+
+.bolg .side3 .one{
+    height: 300px;
+    position: relative;
+}
+
+.bolg .side3 .one img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.bolg .side3 .one .text {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    padding: 10rem 1.1rem 0 1.1rem;
+}
+
