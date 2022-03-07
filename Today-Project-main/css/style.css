@@ -34,7 +34,7 @@ p{
    line-height: 1.5rem;
 }
 
-button {
+ /*button {
   background: #6CAA7F ;
   border-style: none;
   padding: 0.7rem 1.3rem;
@@ -43,7 +43,7 @@ button {
   letter-spacing: 1px;
   color: #fff; 
 }
-
+*/
 hr {
     background: #27ae60;
     color:#27ae60;
@@ -199,3 +199,62 @@ cards1 .row .one .text a::after{
     padding: 10rem 1.1rem 0 1.1rem;
 }
 
+/* style weather */
+.weather1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #222;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 80%;
+}
+
+.weather2{
+    background: #000000d0;
+    color:white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2.temp{
+    margin: 0;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 46px;
+    width: 46px;
+    outline: none;
+    background: #7c7c7c2b;
+    color:white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+input.search-bar{
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color:white;
+    font-family: inherit;
+    font-size: 120%;
+    
+}
+
+button:hover{
+    background: #7c7c7c6b;
+}
