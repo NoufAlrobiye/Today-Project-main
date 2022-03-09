@@ -39,7 +39,7 @@ if (navigator.geolocation){
 }
 })  */
 
-console.log("test")
+//console.log("test")
 let weather = {
     apiKey: "27ddadc485554c5bb84e95511a56aa0a",
     fetchWeather: function (city) {
@@ -54,7 +54,7 @@ let weather = {
     },
     displayWeather: function (data) {
       console.log(data)
-       const { name } = data;
+       const { name } = data.city_name;
        const { icon, description } = data.weather;
        const { temp } = data.temp;
       const { speed } = data.wind_spd;
@@ -65,7 +65,7 @@ let weather = {
        document.querySelector(".temp").innerText = temp + "°C";
        document.querySelector(".wind").innerText ="Wind speed: " + speed + " km/h";
        document.querySelector(".weather").classList.remove("loading");
-       document.body.style.backgroundImage ="url('https://source.unsplash.com/1600x900/?" + name + "')";
+      // document.body.style.backgroundImage ="url('https://source.unsplash.com/1600x900/?" + name + "')";
     },
 
     search: function () {
@@ -78,9 +78,7 @@ let weather = {
     weather.search();
   });
   
-  document
-    .querySelector(".search-bar")
-    .addEventListener("keyup", function (event) {
+  document.querySelector(".search-bar").addEventListener("keyup", function (event) {
       if (event.key == "Enter") {
         weather.search();
       }

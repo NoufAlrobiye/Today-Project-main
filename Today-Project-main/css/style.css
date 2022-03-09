@@ -57,147 +57,17 @@ body {
 }
 
 
-header .intro {
-  position: relative;
-}
-
-header .intro .head{
-  position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%,50%);
-}
-
-header .intro .head h1{
-    font-family: "Leckerli One", cursive;
-    color: #000;
-}
-
-header .intro .head h6{
-    color: #27ae60;
-    letter-spacing: 01.3rem;
-}
-
-header .navbar .navbar-nav .nav-link::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #2ecc71;
-    transition: width 0.3s;
-}
-
-header .navbar .navbar-nav .nav-link:hover::after {
-    width: 60%;
-    height: 2px;
-    background: #2ecc71;
-    transition: width 0.3s;
-    border-bottom: 2px solid #27ae60;
-}
-
-header .navbar .navbar-nav i {
-    font-size: 1.2rem;
-    color: #000;
-    cursor: pointer;
-
-}
-
-cards1 .row .one {
-    height: 300px;
-}
-
-cards1 .row .one img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    box-sizing: border-box;
-    object-fit: cover;
-}
-
-cards1 .row .one .text{
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-}
-
-cards1 .row .one .text p{
-    letter-spacing: 0.2rem;
-    line-height: 2px;
-}
-
-cards1 .row .one .text a{
-    text-decoration: none;
-    border-style: none;
-    color: white;
-    font-size: 0.9rem;
-}
-
-cards1 .row .one .text a::after{
-    content: "";
-    display: block;
-    width: 30%;
-    height: 2px;
-    background: #2ecc71;
-    
-}
-
-.wether {
-    background-color: #defadb;
-}
-
-.wether .row .sub input{
-    outline: none;
-    border: 1px solid #6caa7f;
-}
-
-.wether .row .sub input::placeholder{
-    font-size: 0.9rem;
-}
 
 
-.bolg .row .post a{
-    font-size: 00.9rem;
-    color: #27ae60;
-    font-weight: bold;
-    text-decoration: none;
-    border-style: none;
-}
 
-.bolg .row .sidebar .side2 .row .sidetext h4{
-    font-size: 1rem;
-}
 
-.bolg .row .sidebar .side2 .row .sidetext a{
-    text-decoration: none;
-    border-style: none;
-    color: #6caa7f;
-    font-size: 0.8rem;
-}
 
-.bolg .side3 .one{
-    height: 300px;
-    position: relative;
-}
 
-.bolg .side3 .one img{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    box-sizing: border-box;
-    object-fit: cover;
-}
 
-.bolg .side3 .one .text {
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left:0;
-    padding: 10rem 1.1rem 0 1.1rem;
-}
+
+
+
+
 
 /* style weather */
 .weather1 {
@@ -216,7 +86,7 @@ cards1 .row .one .text a::after{
     color:white;
     padding: 2em;
     border-radius: 30px;
-    width: 100%;
+    width: 200%;
     max-width: 420px;
     margin: 1em;
 }
@@ -242,7 +112,8 @@ button {
     color:white;
     cursor: pointer;
     transition: 0.2s ease-in-out;
-}
+} 
+
 input.search-bar{
     border: none;
     outline: none;
@@ -257,4 +128,16 @@ input.search-bar{
 
 button:hover{
     background: #7c7c7c6b;
+}
+
+input.search-bar2{
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color:white;
+    font-family: inherit;
+    font-size: 120%;
+    
 }
