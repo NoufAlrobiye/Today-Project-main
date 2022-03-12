@@ -1,22 +1,36 @@
+
+
 console.log("here api news")
 
 const newskey ="46202afe6a0e4a67a0ba15feb5845738"
 
 //search Word
-let searchWord=`apple`
+let searchWord=`generl`
 const newUrl = `https://newsapi.org/v2/everything?q=${searchWord}&apiKey=${newskey}`
 
 //category
 let cat="general"
-const catApi =`https://newsapi.org/v2/top-headlines?apiKey=${newskey}&category=${cat}
-`
+let catApi =`https://newsapi.org/v2/top-headlines?apiKey=${newskey}&category=${cat}`
 
+let headings = document.querySelectorAll("#headings a");
+for(let heading of headings){
+  heading.addEventListener("click",(event) =>{
+    //pageNum=1;
+    //prev.disabled=true;
+    //next.disabled=false;
+    let category = event.target.id;
+    catApi = `https://newsapi.org/v2/top-headlines?category=${category}&apiKey=${newskey}`
+    searchNews()
 
+  })
+}
+
+//news search
 document.getElementById("news_search").addEventListener("click", searchNews())
 
 function searchNews () {
-    //fetch(catApi)
-    fetch(newUrl)
+   fetch(catApi)
+   // fetch(newUrl)
 .then(response => response.json())
 .then(data => {
     console.log(data.articles)
@@ -41,3 +55,4 @@ function searchNews () {
 
 );
 }
+

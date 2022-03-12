@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/*
 h1 {
     font-size: 6.5vw !important;
 }
@@ -43,7 +44,7 @@ p{
   letter-spacing: 1px;
   color: #fff; 
 }
-*/
+
 hr {
     background: #27ae60;
     color:#27ae60;
@@ -51,12 +52,13 @@ hr {
 }
 
 
-/* Body */
+
 body {
     font-family: 'Montserrat' sans-serif;
 }
 
 
+*/
 
 
 
@@ -68,8 +70,7 @@ body {
 
 
 
-
-/* style weather */
+/* style weather 
 .weather1 {
   display: flex;
   justify-content: center;
@@ -141,3 +142,5 @@ input.search-bar2{
     font-size: 120%;
     
 }
+
+*/

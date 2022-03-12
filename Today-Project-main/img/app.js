@@ -54,17 +54,20 @@ let weather = {
     },
     displayWeather: function (data) {
       console.log(data)
-       const { name } = data.city_name;
+       const  name  = data.city_name;
        const { icon, description } = data.weather;
-       const { temp } = data.temp;
-      const { speed } = data.wind_spd;
+       const  temp  = data.temp;
+      const  speed  = data.wind_spd;
+      const datetime = data.datetime;
       document.querySelector(".city").innerText = "Weather in " + name;
        document.querySelector(".icon").src =
        "https://www.weatherbit.io/static/img/icons/" + icon + ".png";
        document.querySelector(".description").innerText = description;
        document.querySelector(".temp").innerText = temp + "°C";
        document.querySelector(".wind").innerText ="Wind speed: " + speed + " km/h";
+       document.querySelector(".datetime").innerHTML="Datetime: " + datetime ;
        document.querySelector(".weather").classList.remove("loading");
+       
       // document.body.style.backgroundImage ="url('https://source.unsplash.com/1600x900/?" + name + "')";
     },
 
@@ -84,7 +87,7 @@ let weather = {
       }
     });
   
-  weather.fetchWeather("Denver");
+  weather.fetchWeather("Riyadh");
 
 
 
